@@ -23,6 +23,9 @@ official [Jetbrains Tool](https://github.com/JetBrains/colorSchemeTool) that con
 # Commands used
 
 ```bash
- node vscToTm.js ".\vscThemes\lucy-evening.json" ".\out\lucy-evening.tmTheme"
- node vscToTm.js ".\vscThemes\lucy.json" ".\out\lucy.tmTheme"Ø
+ node vscToTm.js ".\vscThemes\lucy-evening.json" ".\out-temp\lucy-evening.tmTheme"
+ node vscToTm.js ".\vscThemes\lucy.json" ".\out-temp\lucy.tmTheme"
+ 
+ python .\colorSchemeTool.py .\out-temp\lucy.tmTheme .\out-theme\lucy.icls
+ python .\colorSchemeTool.py .\out-temp\lucy-evening.tmTheme .\out-theme\lucy-evening.icls
 ```
